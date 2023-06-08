@@ -1,0 +1,39 @@
+:root {
+  --mario-size: 150vw;
+  --pipe-width: 80vw;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.game-board {
+  border: 1px solid #101010;
+  height: 50vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+}
+
+#cloud {
+  position: absolute;
+  height: 80vh;
+}
+
+#pipe {
+  bottom: 0;
+  height: 5vh;
+  left: 100%;
+  position: absolute;
+  width: var(--pipe-width);
+}
+
+#mario {
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  width: var(--mario-size);
+}

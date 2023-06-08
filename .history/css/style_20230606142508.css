@@ -1,0 +1,39 @@
+* {
+  margin: 0; /* Reset CSS */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-board {
+  width: 80%;
+  height: 500px;
+  border: 1px solid #d0d0d0;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.pipe {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  right: 0;
+}
+
+
+@keyframes pipe-animação {
+ from  {
+    right: -100px;
+
+ }
+ to{
+
+
+    right: 100%;
+ }
+ 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: pipe-animação;
+ 

@@ -1,0 +1,16 @@
+* {
+  margin: 0; /* Reset CSS */
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.game-board {
+  width: 80%;
+  height: 500px;
+  border: 1px solid #333;
+  margin: 0;
+}
+
+.pipe {
+  position: absolute;
+}

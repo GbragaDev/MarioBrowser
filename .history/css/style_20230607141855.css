@@ -1,0 +1,46 @@
+:root {
+  --mario-size: 150px; /* Mudança: De vw para px */
+  --pipe-width: 80px; /* Mudança: De vw para px */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.game-board {
+  border: 1px solid #101010;
+  height: 50vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+}
+
+#cloud {
+  position: absolute;
+  height: 80vh;
+}
+
+#pipe {
+  bottom: 0;
+  left: 100%;
+  position: absolute;
+  width: var(--pipe-width);
+  height: 80px; /* Novo: Adicionada altura fixa */
+}
+
+#mario {
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  width: var(--mario-size);
+}
+
+#score {
+  font-size: 2em;
+  margin: 40px;
+  font-style: normal;
+  position: absolute;
+}

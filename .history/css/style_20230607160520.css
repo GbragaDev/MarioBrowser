@@ -1,0 +1,65 @@
+:root {
+  --mario-size: 150px; /* Mudança: De vw para px */
+  --pipe-width: 80px; /* Mudança: De vw para px */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.game-board {
+  background-color: rgb(46, 225, 225);
+  border: 5px solid #101010;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  height: 500px;
+}
+
+#cloud {
+  position: absolute;
+  height: 50vh;
+  width: 80%;
+}
+
+#pipe {
+  bottom: 0;
+  left: 100%; /* Ajustar a posição inicial para a direita fora da tela */
+  position: absolute;
+  width: var(--pipe-width);
+  height: 80px;
+}
+
+#mario {
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  width: var(--mario-size);
+}
+
+.score-container {
+  font-size: 2em;
+  margin: 40px;
+  font-style: normal;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: relative;
+}
+
+#score-container {
+  position: absolute; /* adiciona posição absoluta */
+  top: 10px; /* ajusta a posição vertical */
+  left: 10px; /* ajusta a posição horizontal */
+  display: flex;
+  align-items: center;
+  background: url("caminho/para/sua/imagem.jpg") no-repeat left center;
+  background-size: contain;
+  padding: 10px;
+}
+
+#score {
+  margin-left: 20px; /* adds some space between the image and text */
+}

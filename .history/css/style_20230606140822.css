@@ -1,0 +1,10 @@
+* {
+  margin: 0; /* Reset CSS */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-board {
+  width: 80%;
+  height: 1 px solid;
+}

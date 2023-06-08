@@ -1,0 +1,65 @@
+:root {
+  --mario-size: 150px; /* Mudança: De vw para px */
+  --pipe-width: 80px; /* Mudança: De vw para px */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.game-board {
+  background-color: rgb(46, 225, 225);
+  border: 5px solid #101010;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  height: 500px;
+}
+
+#cloud {
+  position: absolute;
+  height: 50vh;
+  width: 80%;
+}
+
+#pipe {
+  bottom: 0;
+  left: 100%; /* Ajustar a posição inicial para a direita fora da tela */
+  position: absolute;
+  width: var(--pipe-width);
+  height: 80px;
+  image-rendering: optimizeSpeed;
+  image-rendering: auto;
+}
+
+#mario {
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  width: var(--mario-size);
+  image-rendering: optimizeQuality;
+}
+
+#score-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#score {
+  margin-left: 10px;
+  background-color: rgb(55, 131, 37);
+  border-radius: 20%;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  position: relative;
+  z-index: 2;
+  image-rendering: auto;
+  font-size: 20px;
+  font: 1em sans-serif;
+}

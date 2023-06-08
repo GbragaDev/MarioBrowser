@@ -1,0 +1,1 @@
+document.addEventListener(onkeydown, jump);
